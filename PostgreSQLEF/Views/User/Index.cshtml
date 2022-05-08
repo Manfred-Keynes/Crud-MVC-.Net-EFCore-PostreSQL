@@ -1,0 +1,13 @@
+﻿@model List<PostgreSQLEF.Models.User>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@foreach (var user in Model)
+{
+    <div>
+        @user.Email
+    </div>
+}
